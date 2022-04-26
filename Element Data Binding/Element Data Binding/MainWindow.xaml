@@ -1,0 +1,14 @@
+﻿<Window x:Class="Element_Data_Binding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Element_Data_Binding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Height="81.548" Margin="70.06,80.755,0,0" VerticalAlignment="Top" Width="342.505" Minimum="10" Maximum="150"/>
+        <TextBlock HorizontalAlignment="Left" Height="217.227" Margin="102.68,193.44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="662.768" Text="Hello World!" FontSize="{Binding Value, ElementName=slider}"/>
+
+    </Grid>
+</Window>
